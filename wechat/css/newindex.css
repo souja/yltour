@@ -1,5 +1,4 @@
 
-
 #header {
     background: url(../images/banner.png) 0 0 no-repeat;
     height: 4rem;
@@ -89,16 +88,86 @@
     border: 1px solid #dddddd;
 }
 
+#sideLayout {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+@media screen and (max-width: 320px) {
+    @media screen and (max-height: 568px) {
+        #sideLayout {
+            position: absolute;
+            top: -100%;
+            left: 100%;
+            width: 100%;
+            height: 100%;
+            z-index: 10;
+        }
+    }
+}
 
 
-#container .bannerArea{ width: 100%; height: auto; position: relative; overflow: hidden;}
 
-.bannerList{ width:100%;height: 11.38rem; overflow: hidden; position: relative;}
-.bannerList li{display: none; width: 100%; position: absolute; height: 100%; float: left; font-size: 0px;
-    background-size: cover;  background-position: center; top: 0; left: 0;}
 
-.bannerBtn{ width: 100%; height: 3px; text-align: center; position: absolute; bottom: 8%;  }
-.bannerBtn li{ display: inline-block; width:20px;height:20px; border-radius: 10px;-webkit-border-radius: 10px;
-    background: #FFFFFF; margin-right: 10px; transition-duration: .5s;-webkit-transition-duration: .5s; cursor: pointer; }
-.bannerBtn li.cur{ background: #FEFF00;margin-right: 10px;}
-.bannerBtn li.mr{ margin-right: 0px;margin-right: 0.25rem;}
+
+#container .bannerArea {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.bannerList {
+    width: 100%;
+    height: 11.38rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.bannerList li {
+    display: none;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    float: left;
+    font-size: 0px;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+}
+
+.bannerBtn {
+    width: 100%;
+    height: 3px;
+    text-align: center;
+    position: absolute;
+    bottom: 18%;
+}
+
+.bannerBtn li {
+    display: inline-block;
+    width: .5rem;
+    height: .5rem;
+    border-radius: .25rem;
+    -webkit-border-radius: .25rem;
+    background: #FFFFFF;
+    margin-right: .25rem;
+    transition-duration: .5s;
+    -webkit-transition-duration: .5s;
+    cursor: pointer;
+}
+
+.bannerBtn li.cur {
+    background: red;
+    margin-right: .25rem;
+}
+
+.bannerBtn li.mr {
+    margin-right: 0px;
+    margin-right: 0.25rem;
+}
