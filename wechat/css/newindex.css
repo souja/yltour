@@ -97,6 +97,89 @@
     z-index: 10;
 }
 
+.fake {
+    float: left;
+    width: 4rem;
+    height: 100%;
+    display: inline-block;
+    background: #00000000;
+}
+
+#temp {
+    display: none;
+    width: 4rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #00000000;
+}
+
+@media screen and (max-width: 768px) {
+    @media screen and (max-height: 1024px) {
+        #sideLayout {
+            position: absolute;
+            top: -100%;
+            left: 100%;
+            width: 100%;
+            height: 100%;
+            z-index: 10;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    @media screen and (max-height: 1024px) {
+        #sideLayout {
+            position: absolute;
+            top: -100%;
+            left: 100%;
+            width: 100%;
+            height: 100%;
+            z-index: 10;
+        }
+    }
+}
+
+@media screen and (max-width: 414px) {
+    @media screen and (max-height: 736px) {
+        #sideLayout {
+            position: absolute;
+            top: 0;
+            left: 100%;
+            width: 100%;
+            height: 100%;
+            z-index: 10;
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    @media screen and (max-height: 567px) {
+        #sideLayout {
+            position: absolute;
+            top: 0;
+            left: 100%;
+            width: 100%;
+            height: 100%;
+            z-index: 10;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    @media screen and (max-height: 667px) {
+        #sideLayout {
+            position: absolute;
+            top: -100%;
+            left: 100%;
+            width: 100%;
+            height: 100%;
+            z-index: 10;
+        }
+    }
+}
+
 @media screen and (max-width: 320px) {
     @media screen and (max-height: 568px) {
         #sideLayout {
@@ -110,11 +193,7 @@
     }
 }
 
-
-
-
-
-#container .bannerArea {
+.bannerArea {
     width: 100%;
     height: auto;
     position: relative;
