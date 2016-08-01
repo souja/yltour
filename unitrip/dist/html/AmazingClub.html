@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>AmazingClub</title>
+	<link rel="stylesheet" type="text/css" href="../css/style-index.css">
+</head>
+<body>
+	<div class="xdp">
+		<div class="top_bar clear">
+			<a class="float-left top_button ico_home" href="###"><img src="../img/ico_home.png" alt=""></a>
+			<a class="float-right top_button ico_more" href="###"><img src="../img/ico_more.png" alt=""></a>
+		</div>
+		<p class="banner"><img src="../img/img_banner.png" alt=""></p>
+		<div class="container">
+			<p><img src="../img/img_banner1.png" alt=""></p>
+			<p><img src="../img/img_banner2.png" alt=""></p>
+		</div>
+		<div class="side_bar">
+			<p><img src="../img/sideTop.png" alt=""></p>
+		</div>
+	</div>
+	<script src="../js/jquery-1.10.1.min.js"></script>
+	<script src="../js/jquery.easing.js"></script>
+	<script src="../js/jquery.sidr.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('.ico_more').sidr({
+				side:"right",
+				source: '.side_bar'
+			});
+		});
+	</script>
+</body>
+</html>
